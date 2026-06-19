@@ -1,0 +1,164 @@
+
+
+    //-------------- Hardware Config ---------------------
+
+    //------------------- Process EMIC-Generate files result ----------------
+
+// Functions:
+
+
+// Events:
+
+
+    //------------------- APIs -----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+////  EMIC:json(type = configurator)
+////  {
+////      "brief": "El protoclo define el formato de los datos enviados y recibidos",
+////      "legend": "seleccione protocolo",
+////      "name": "USBProto",
+////      "options": 
+////      [
+////          {
+////              "legend": "EMIC Mesage",
+////              "value": "EMIC_Msg",
+////              "brief": "Mensajes para intercambio de información entre modulos y software EMIC"
+////          } ,
+////          {
+////              "legend": "TEXT Mesage",
+////              "value": "TEXT_Msg",
+////              "brief": "Mensajes de textos terminados en fin de linea - para sistemas heredados"
+////           }
+////      ]
+////  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================[end of file]============================================*/
+
+
+
+
+
+
+
+
+
+/*==================[end of file]============================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Persistencia
+
+
+
+
+
+
+
+    //-------------------- main  -----------------------
+
+
+
+
+
+
+
+
+
+
+
+    //------------------- Copy  EMIC-Generate files result ----------------
+
+    //------------------- Set userFncFile.c as a copiler module ----------------
+
+    //------------------- Add all compiler modules to the project. ----------------
+    
+
