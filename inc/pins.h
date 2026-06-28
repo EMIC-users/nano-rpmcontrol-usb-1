@@ -46,6 +46,29 @@
 #define RPOUT_Led1		            RPOR3bits.RP6R
 #define RPIN_Led1		            6
 #define CN_Led1		                24
+// Bus I2C EMIC (I2C2): SCL=B3, SDA=B2 (de la config CCS HRD_USB V1.1)
+#define TRIS_SCL	                _TRISB3
+#define LAT_SCL 	                _LATB3
+#define ODC_SCL	                _ODB3
+#define PIN_SCL 	                _RB3
+#define RPOUT_SCL	                RPOR1bits.RP3R
+#define RPIN_SCL	                3
+#define CN_SCL		                7
+#define ADC_value_SCL              Buffer_entradas[5] 
+#define HAL_SetAnalog_SCL()        {_PCFG5=0;\
+                                        adc_addAnalogChannel(5);}
+
+#define TRIS_SDA	                _TRISB2
+#define PIN_SDA 	                _RB2
+#define LAT_SDA 	                _LATB2
+#define ODC_SDA	                _ODB2
+#define RPOUT_SDA		            RPOR1bits.RP2R
+#define RPIN_SDA		            2
+#define CN_SDA		                6
+#define ADC_value_SDA              Buffer_entradas[4] 
+#define HAL_SetAnalog_SDA()        {_PCFG4=0;\
+                                        adc_addAnalogChannel(4);}
+
 #define TRIS_MCP2200_TX	                _TRISB10
 #define PORT_MCP2200_TX 	                _RB10
 #define LAT_MCP2200_TX 	                _LATB10
