@@ -27,7 +27,7 @@ void eI2C(char* tag, const streamIn_t* const msg)
 void eUSB(char* tag, const streamIn_t* const msg)
 {
     LEDs_led_blink(100, 101, 2);
-    pUSB("t:$s, M:$r", tag, msg);
+    pUSB("ACK\tt:$s, M:$r", tag, msg);
     pI2C("$s\t$r", tag, msg);
 }
 
