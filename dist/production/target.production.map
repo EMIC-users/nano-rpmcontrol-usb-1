@@ -248,10 +248,10 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                      0x4674                0x16            0x21  (33)
 .text                       0x468a              0x104a          0x186f  (6255)
 .dinit                      0x56d4                0xf0           0x168  (360)
-.text                       0x57c4               0x244           0x366  (870)
+.text                       0x57c4               0x252           0x37b  (891)
 myFlashSpace                0x6000               0x400           0x600  (1536)
 
-                 Total "program" memory used (bytes):         0x8a0c  (35340) 54%
+                 Total "program" memory used (bytes):         0x8a21  (35361) 54%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -535,14 +535,14 @@ External Symbols in Program Memory (by address):
                   0x005948                  _onReset
                   0x005956                  _eI2C
                   0x005976                  _eUSB
-                  0x005996                  _getSystemMilis
-                  0x0059a0                  _callback
-                  0x0059b2                  _systemTimeInit
-                  0x0059bc                  _initSystem
-                  0x0059ca                  _main
-                  0x0059e0                  _timer4_init
-                  0x0059f6                  _Init_USBDriver
-                  0x005a02                  _Poll_USBDriver
+                  0x0059a4                  _getSystemMilis
+                  0x0059ae                  _callback
+                  0x0059c0                  _systemTimeInit
+                  0x0059ca                  _initSystem
+                  0x0059d8                  _main
+                  0x0059ee                  _timer4_init
+                  0x005a04                  _Init_USBDriver
+                  0x005a10                  _Poll_USBDriver
                   0x006000                  _myFlashMemory
 
 External Symbols in Program Memory (by name):
@@ -556,7 +556,7 @@ External Symbols in Program Memory (by name):
                   0x005842                  _ISR_UART1_CALLBACK
                   0x004f1e                  _Init_I2C_Driver
                   0x0054d0                  _Init_Master_I2C2
-                  0x0059f6                  _Init_USBDriver
+                  0x005a04                  _Init_USBDriver
                   0x005554                  _IsCollisionDetectI2c2
                   0x005578                  _IsDataOrAddressI2c2
                   0x00556c                  _IsReceiveBufferFullI2c2
@@ -568,7 +568,7 @@ External Symbols in Program Memory (by name):
                   0x00588e                  _LEDs_led_poll
                   0x005540                  _OverflowReset_I2C2
                   0x0057e4                  _Poll_USB
-                  0x005a02                  _Poll_USBDriver
+                  0x005a10                  _Poll_USBDriver
                   0x0053bc                  _ReadMem
                   0x0055c0                  _Read_I2C2
                   0x005590                  _Start_I2C2
@@ -699,7 +699,7 @@ External Symbols in Program Memory (by name):
                   0x000a6e                  _atoi
                   0x000ace                  _atol
                   0x000b36                  _atoll
-                  0x0059a0                  _callback
+                  0x0059ae                  _callback
                   0x004150                  _copysignl
                   0x004f3e                  _countI2cStreamIn
                   0x005956                  _eI2C
@@ -710,16 +710,16 @@ External Symbols in Program Memory (by name):
                   0x004294                  _fmodl
                   0x004f2a                  _getAvailable_out_count
                   0x004f46                  _getI2cStreamIn
-                  0x005996                  _getSystemMilis
+                  0x0059a4                  _getSystemMilis
                   0x0054a2                  _getc_program3B
                   0x0050a0                  _i2cCloseWriteFrame
                   0x0050e2                  _i2cOpenReadFrame
                   0x004f74                  _ini_I2C_IN
                   0x004f9e                  _ini_I2C_OUT
                   0x004fc8                  _ini_I2C_OUT_FM
-                  0x0059bc                  _initSystem
+                  0x0059ca                  _initSystem
                   0x00591a                  _load
-                  0x0059ca                  _main
+                  0x0059d8                  _main
                   0x002606                  _memcpy
                   0x000b9a                  _memset
                   0x006000                  _myFlashMemory
@@ -767,8 +767,8 @@ External Symbols in Program Memory (by name):
                   0x000ccc                  _strtod
                   0x000cc6                  _strtof
                   0x000cd2                  _strtold
-                  0x0059b2                  _systemTimeInit
-                  0x0059e0                  _timer4_init
+                  0x0059c0                  _systemTimeInit
+                  0x0059ee                  _timer4_init
                   0x002644                  _tolower
                   0x00355a                  _toupper
                   0x002086                  _vfprintf
@@ -2371,7 +2371,7 @@ myFlashSpace      0x006000        0x400
 .dinit            0x0056d4         0xf0
  .dinit           0x0056d4         0xf0 data_init
 
-.text             0x0057c4        0x244
+.text             0x0057c4        0x252
  .text            0x0057c4         0xa2 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/USB_API.o
                   0x0057c4                  _USB_Init
                   0x0057cc                  _pUSB
@@ -2385,19 +2385,19 @@ myFlashSpace      0x006000        0x400
  .text            0x0058ec         0x5c /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/Persist.o
                   0x0058ec                  _save
                   0x00591a                  _load
- .text            0x005948         0x4e /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/userFncFile.o
+ .text            0x005948         0x5c /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/userFncFile.o
                   0x005948                  _onReset
                   0x005956                  _eI2C
                   0x005976                  _eUSB
- .text            0x005996         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/systemTimer.o
-                  0x005996                  _getSystemMilis
-                  0x0059a0                  _callback
-                  0x0059b2                  _systemTimeInit
- .text            0x0059bc         0x24 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/main.o
-                  0x0059bc                  _initSystem
-                  0x0059ca                  _main
- .text            0x0059e0         0x16 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/timer.o
-                  0x0059e0                  _timer4_init
- .text            0x0059f6         0x12 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/MCP2200.o
-                  0x0059f6                  _Init_USBDriver
-                  0x005a02                  _Poll_USBDriver
+ .text            0x0059a4         0x26 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/systemTimer.o
+                  0x0059a4                  _getSystemMilis
+                  0x0059ae                  _callback
+                  0x0059c0                  _systemTimeInit
+ .text            0x0059ca         0x24 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/main.o
+                  0x0059ca                  _initSystem
+                  0x0059d8                  _main
+ .text            0x0059ee         0x16 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/timer.o
+                  0x0059ee                  _timer4_init
+ .text            0x005a04         0x12 /root/Dropbox/EMIC/TARGETS/mariano.hunkeler__rfindustrial.com/RPMControl/USB_1/build/default/production/MCP2200.o
+                  0x005a04                  _Init_USBDriver
+                  0x005a10                  _Poll_USBDriver
